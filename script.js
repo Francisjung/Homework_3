@@ -18,7 +18,6 @@ var conditions = [];
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  alert(password);
   passwordText.value = password;
 
 }
@@ -130,4 +129,4 @@ function generateRandomNumber(){
 }
 
 // Adds an event listener that activates when the buttton on the browser page is pressed.
-generateBtn.addEventListener("click", writePassword());
+generateBtn.addEventListener("click", writePassword);
