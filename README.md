@@ -61,7 +61,7 @@ SOFTWARE.
 
 ## Features
 
-- Generates a randomized password between 8 adn 128 characters in length.
+- Generates a randomized password between 8 and 128 characters in length.
 - Allows the user to include/ exclude lower and upper case characters, numbers, or special characters if they wish to do so.
 - Displays the generated password in the browser, allows the user to copy and paste the password.
 
