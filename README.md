@@ -23,7 +23,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 Using the password generator is easy, simply open the page at (https://francisjung.github.io/Homework_3/) and click the generate password button. When pressed the browser will give you a variety of prompts which will help to describe your password. 
 
-![alt text](assets\Homework_3_screenshot.PNG)
+![Screenshot of Password Generator](assets\Homework_3_screenshot.PNG)
 
 This password can be between 8 and 128 characters, and may include or exclude lower/ uppercase letters, numbers, and special characters. Please keep in mind that if all character types are excluded the password generator will not be able to run, so please pick at least one!
 
