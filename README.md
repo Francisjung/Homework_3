@@ -1,100 +1,105 @@
-# 03 JavaScript: Password Generator
+# <Assignment 3: Password Generator>
 
-## Your Task
+## Description
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+- This project was created to address security concerns of employees with access to sensitive data.
+- This project aims to provide employees with a completely safe and arbitrary password which can be used to better secure thier accounts and data with.
+- While they can be easier to remember, traditional passwords pose a security threat as they are also easier to guess/ crack. By offering an alternative we hope to solve this problem.
+- Working on this project helped me to become more proficient with JavaScript. While I was already somewhat famliliar with the language, it's still helpful to have more practical experience with it.
 
-## User Story
+## Table of Contents (Optional)
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+If your README is long, add a table of contents to make it easy for users to find what they need.
 
-## Acceptance Criteria
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+## Usage
 
-## Mock-Up
+Using the password generator is easy, simply open the page at (https://francisjung.github.io/Homework_3/) and click the generate password button. When pressed the browser will give you a variety of prompts which will help to describe your password. 
 
-The following image shows the web application's appearance and functionality:
+![alt text](assets\Homework_3_screenshot.PNG)
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+This password can be between 8 and 128 characters, and may include or exclude lower/ uppercase letters, numbers, and special characters. Please keep in mind that if all character types are excluded the password generator will not be able to run, so please pick at least one!
 
-## Grading Requirements
+## Credits
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+List your collaborators, if any, with links to their GitHub profiles.
 
-This Challenge is graded based on the following criteria: 
+This project was made partly in collaboration with my fellow student Kyle McClendon (https://github.com/KyleM02), and with some help from the amazing tutorials and documentation at (https://w3schools.com).
 
-### Technical Acceptance Criteria: 40%
+Thanks to their help I was able to save myself a sleepless night and a few cups of coffee, I couldn't be more grateful!
 
-* Satisfies all of the preceding acceptance criteria.
+## License
 
-### Deployment: 32%
+MIT License
 
-* Application deployed at live URL.
+Copyright (c) [2023] [Francis Jung]
 
-* Application loads with no errors.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* Application GitHub URL submitted.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-* GitHub repository that contains application code.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-### Application Quality: 15%
+## Features
 
-* Application user experience is intuitive and easy to navigate.
+- Generates a randomized password between 8 adn 128 characters in length.
+- Allows the user to include/ exclude lower and upper case characters, numbers, or special characters if they wish to do so.
+- Displays the generated password in the browser, allows the user to copy and paste the password.
 
-* Application user interface style is clean and polished.
+## Tests
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
+TC 01: Test for Valid User Input on Password Length
 
-### Repository Quality: 13%
+Test Steps:
 
-* Repository has a unique name.
+1. Navigate to the password generator at (https://Github.io/Francisjung/Homework_3).
+2. Click the Generate Password button.
+3. Enter an invalid input (<8, >128, or non numeric).
 
-* Repository follows best practices for file structure and naming conventions.
+Expected Result: 
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+The user recieves an alert which warns them that they must enter a valid input. Afterward the page will ask them for a new input.
 
-* Repository contains multiple descriptive commit messages.
+TC02: Test for Valid User Selection of Conditions
 
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
+Test Steps:
 
-## Review
+1. Navigate to the password generator at (https://Github.io/Francisjung/Homework_3).
+2. Click the Generate Password button.
+3. Enter an input that is >8 and <128
+4. Select the cancel option on each confirmation prompt.
 
-You are required to submit the following for review:
+Expected Result: 
 
-* The URL of the deployed application.
+The user recieves an alert which states that the password generator cannot generate a valid password if there are no legal character types.
 
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
+TC03: Generate valid password
 
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Test Steps:
+
+1. Navigate to the password generator at (https://Github.io/Francisjung/Homework_3).
+2. Click the Generate Password button.
+3. Enter an input that is >8 and <128
+4. Select the confirm on at least one prompt.
+
+Expected Result:
+
+After completing all 4 confirmation prompts the user will recieve a randomly generated password of their desired length, including their desired character type and excluding any non-desired character types.
