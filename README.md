@@ -31,7 +31,7 @@ This password can be between 8 and 128 characters, and may include or exclude lo
 
 List your collaborators, if any, with links to their GitHub profiles.
 
-This project was made partly in collaboration with my fellow student Kyle McClendon (https://github.com/KyleM02), and with some help from the amazing tutorials and documentation at (https://w3schools.com).
+This project was made partly in collaboration with my fellow student Kyle McClendon (https://github.com/KyleM021199), and with some help from the amazing tutorials and documentation at (https://w3schools.com).
 
 Thanks to their help I was able to save myself a sleepless night and a few cups of coffee, I couldn't be more grateful!
 
